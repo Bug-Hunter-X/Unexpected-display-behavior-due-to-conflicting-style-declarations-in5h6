@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text shows correctly.
+  </div>
+  <script>
+    // Use a class to manage visibility for better control and cross-browser compatibility
+    const myDiv = document.getElementById("myDiv");
+    myDiv.classList.add("hidden"); // Initially hidden
+    setTimeout(() => {
+        myDiv.classList.remove("hidden"); // Show after a short delay
+    }, 100); // Adjust delay as needed 
+  </script>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</body>
+</html>
