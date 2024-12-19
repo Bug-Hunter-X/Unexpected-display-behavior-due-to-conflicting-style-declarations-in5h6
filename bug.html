@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not show correctly.
+  </div>
+  <script>
+    document.getElementById("myDiv").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  </script>
+</body>
+</html>
